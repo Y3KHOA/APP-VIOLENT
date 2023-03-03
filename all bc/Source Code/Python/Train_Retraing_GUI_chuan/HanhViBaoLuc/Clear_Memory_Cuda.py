@@ -1,0 +1,38 @@
+
+# Kiem tra dung luong
+# from GPUtil import showUtilization as gpu_usage
+# gpu_usage()
+
+
+# Xoa bo nho
+# import torch
+# torch.cuda.empty_cache()
+
+# Xoa bo nho
+# from numba import cuda
+# cuda.select_device(0)
+# cuda.close()
+# cuda.select_device(0)
+
+# Giai phong bo nho
+
+# import torch
+# from GPUtil import showUtilization as gpu_usage
+# from numba import cuda
+#
+# def free_gpu_cache():
+#     print("Initial GPU Usage")
+#     gpu_usage()
+#
+#     torch.cuda.empty_cache()
+#
+#     cuda.select_device(0)
+#     cuda.close()
+#     cuda.select_device(0)
+#
+#     print("GPU Usage after emptying the cache")
+#     gpu_usage()
+#
+# free_gpu_cache()
+
+
