@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.InfoFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <ImageView
+
+            android:id="@+id/bg_user"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/bg_user" />
+
+        <TextView
+            android:id="@+id/labelNameUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bg_user"
+            android:paddingLeft="50dp"
+
+            android:text="Giáo viên hướng dẫn"
+            android:textColor="#B3B3B3"
+            android:textSize="12dp" />
+
+        <EditText
+
+            android:id="@+id/inputNameUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/labelNameUser"
+            android:enabled="false"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="10dp"
+            android:text="Ngô Dương Hà "
+            android:textColor="#000000"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/labelEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/inputNameUser"
+            android:paddingLeft="50dp"
+            android:text="Sinh viên thực hiện"
+            android:textColor="#B3B3B3"
+            android:textSize="12dp" />
+
+        <EditText
+            android:inputType="text|textMultiLine"
+            android:id="@+id/InputEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/labelEmail"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="10dp"
+            android:enabled="false"
+            android:text="- Trần Tấn Tài\n\n- Lâm Nhật Ánh\n\n- Nguyễn Đăng Khoa
+         "
+            android:textColor="#000000"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/labelPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/InputEmail"
+            android:paddingLeft="50dp"
+            android:text="Tóm tắt đề tài"
+            android:textColor="#B3B3B3"
+            android:textSize="12dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/InputPhone"
+            android:layout_below="@+id/labelPhone"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:text="Ứng dụng giúp hỗ trợ người dùng có thể xem được hành động bạo lực phát sinh, thống kê hành động bạo lực, nhận được thông báo về hành vi bạo lực đó."
+            android:textColor="#000000"
+            android:enabled="false"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/InputPhone"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:layout_marginTop="20dp"
+            >
+
+            <Button
+                android:layout_weight="0.3"
+                android:backgroundTint="@color/background_app"
+                android:layout_width="0dp"
+                android:text="Log out"
+                android:id="@+id/btnLogOut"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</FrameLayout>

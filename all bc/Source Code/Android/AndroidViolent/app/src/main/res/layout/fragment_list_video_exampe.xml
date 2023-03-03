@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.ListVideoExampleFragment">
+    <!--Ui component for our bar chart-->
+
+    <RelativeLayout
+        android:id="@+id/lbltime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="4dp"
+        android:paddingTop="4dp"
+        android:paddingRight="4dp"
+        android:paddingBottom="4dp"
+
+        >
+
+        <TextView
+            android:id="@+id/textTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:lineHeight="8pt"
+            android:text="Danh sách thống kê video "
+            android:textAlignment="textStart"
+            android:textSize="6pt" />
+
+        <ImageView
+            android:id="@+id/btnTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_baseline_calendar_month_24"
+
+            tools:ignore="SpeakableTextPresentCheck" />
+
+
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/bar_chart"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/lbltime"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        >
+
+        <Spinner
+            android:id="@+id/spinner_dropdown"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+
+            android:spinnerMode="dropdown"
+            android:visibility="gone"
+            android:layout_below="@id/lbltime"
+            />
+        <Spinner
+            android:id="@+id/spinner_loaiBD"
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+            android:layout_height="match_parent"
+            android:spinnerMode="dropdown"
+            android:visibility="gone"
+            android:layout_below="@id/lbltime"
+            android:layout_centerHorizontal="true"
+            />
+    </LinearLayout>
+
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/main_piechart"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/bar_chart"
+        android:layout_marginBottom="10dp" />
+
+    <com.github.mikephil.charting.charts.BarChart
+    android:id="@+id/main_barchart"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        android:layout_below="@+id/bar_chart"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

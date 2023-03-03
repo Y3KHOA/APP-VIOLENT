@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_app"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/lblVideo"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="Video Violent"
+            android:textColor="@color/purple_500"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:id="@+id/btn_rollback"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_baseline_arrow_back_24" />
+    </RelativeLayout>
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:text="Video Violent"-->
+<!--        android:id="@+id/lblVideo"-->
+<!--        android:textSize="36dp"-->
+<!--        android:textAlignment="center"-->
+<!--        />-->
+
+    <com.google.android.exoplayer2.ui.SimpleExoPlayerView
+        android:id="@+id/video_media"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/lblVideo" />
+
+    <TextView
+        android:id="@+id/nameVideo"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:layout_below="@+id/video_media"
+        android:layout_marginTop="8dp"
+        android:paddingLeft="8dp"
+        android:text="Ten cua video "
+        android:textAlignment="center"
+        android:textSize="14dp"
+        android:lineHeight="28dp"
+
+        />
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/listsubvideo"
+            tools:listitem="@layout/list_video_media_item"
+            android:layout_below="@+id/nameVideo"/>
+</RelativeLayout>

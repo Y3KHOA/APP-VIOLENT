@@ -1,0 +1,77 @@
+# C/C++ build system timings
+create_cxx_tasks
+  create-initial-cxx-model
+    create-module-model 18ms
+    create-module-model
+      create-cmake-model 11ms
+      [gap of 10ms]
+    create-module-model completed in 26ms
+    create-variant-model 10ms
+    [gap of 16ms]
+    create-X86-model 12ms
+    create-X86_64-model 11ms
+  create-initial-cxx-model completed in 127ms
+create_cxx_tasks completed in 134ms
+
+# C/C++ build system timings
+create_cxx_tasks
+  create-initial-cxx-model
+    create-module-model 12ms
+    [gap of 12ms]
+    create-ARM64_V8A-model 12ms
+    create-module-model
+      create-cmake-model 10ms
+      [gap of 25ms]
+    create-module-model completed in 39ms
+    create-variant-model 16ms
+    [gap of 26ms]
+  create-initial-cxx-model completed in 131ms
+create_cxx_tasks completed in 134ms
+
+# C/C++ build system timings
+create_cxx_tasks
+  create-initial-cxx-model
+    [gap of 29ms]
+    create-module-model 13ms
+    [gap of 21ms]
+  create-initial-cxx-model completed in 63ms
+create_cxx_tasks completed in 64ms
+
+# C/C++ build system timings
+create_cxx_tasks
+  create-initial-cxx-model
+    create-module-model
+      create-cmake-model 19ms
+    create-module-model completed in 34ms
+    create-module-model
+      create-cmake-model 11ms
+    create-module-model completed in 17ms
+    [gap of 21ms]
+  create-initial-cxx-model completed in 95ms
+create_cxx_tasks completed in 97ms
+
+# C/C++ build system timings
+create_cxx_tasks
+  create-initial-cxx-model
+    create-module-model
+      create-cmake-model 10ms
+      [gap of 14ms]
+    create-module-model completed in 30ms
+    [gap of 20ms]
+    create-X86_64-model 13ms
+    [gap of 12ms]
+    create-module-model 11ms
+    [gap of 34ms]
+  create-initial-cxx-model completed in 120ms
+create_cxx_tasks completed in 122ms
+
+# C/C++ build system timings
+create_cxx_tasks
+  create-initial-cxx-model
+    create-module-model 12ms
+    [gap of 24ms]
+    create-module-model 10ms
+    [gap of 23ms]
+  create-initial-cxx-model completed in 69ms
+create_cxx_tasks completed in 71ms
+

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="loginButton">
+        <item name="mrl_rippleOverlay">true</item>
+        <item name="mrl_rippleColor">#80808080</item>
+        <item name="mrl_rippleAlpha">0.2</item>
+    </style>
+</resources>

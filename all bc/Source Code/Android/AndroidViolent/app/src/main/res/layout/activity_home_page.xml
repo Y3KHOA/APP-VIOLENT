@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".HomePage">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="85dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="ĐỀ TÀI: Tìm hiểu kĩ thuật xử lý dữ liệu và mạng học sâu nhằm nâng cao hiệu suất cho bài toán phân loại bạo lực trên video"
+        android:textColor="@color/purple_500"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageFilterView" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/imageFilterView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/group_1" />
+
+    <ImageButton
+        android:id="@+id/btn_screenCam"
+        android:layout_width="400px"
+        android:layout_height="400px"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="50dp"
+        android:background="@null"
+        android:onClick="btn_screenCam_click"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/camera2"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/btn_notification"
+        android:layout_width="400px"
+        android:layout_height="400px"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@null"
+        android:onClick="btn_notification_click"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_list"
+        app:srcCompat="@drawable/notifition"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/btn_list"
+        android:layout_width="400px"
+        android:layout_height="400px"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@null"
+        android:onClick="btn_list_click"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/listvideo2"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/btn_info"
+        android:layout_width="400px"
+        android:layout_height="400px"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="50dp"
+        android:background="@null"
+        android:onClick="btn_info_click"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_screenCam"
+        app:srcCompat="@drawable/users2"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/imageFilterView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_notification"
+        app:layout_constraintVertical_bias="0.498"
+        app:srcCompat="@drawable/footer" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

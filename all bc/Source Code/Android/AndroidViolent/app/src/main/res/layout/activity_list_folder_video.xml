@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout_folder"
+    tools:context=".ListFolderVideo">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/lblVideo"
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="Label Violent"
+            android:textColor="@color/purple_500"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/btnFilter"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toEndOf="@+id/btn_rollback"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/btnFilter"
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:layout_weight="1"
+            android:background="@null"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/filter_and_sort"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/btn_rollback"
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:background="@null"
+            android:onClick="btn_rollback"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="?attr/actionModeCloseDrawable"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <!--    <TextView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="60dp"-->
+    <!--        android:text="Video Violent"-->
+    <!--        android:id="@+id/lblVideo"-->
+    <!--        android:textSize="36dp"-->
+    <!--        android:textAlignment="center"-->
+    <!--        />-->
+
+    <ListView
+        android:id="@+id/list_video"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/lblVideo"
+        android:layout_marginTop="0dp"
+        tools:listitem="@layout/list_folder_video" />
+
+
+
+
+
+
+</RelativeLayout>
